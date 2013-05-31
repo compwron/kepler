@@ -8,7 +8,7 @@ describe KeplerOrbit do
 
   describe "#vis_viva_orbit_relative_speed_between_bodies" do
     it "should find a relative speed between bodies of -1.1553216002481734e-05 for central body with a mass of 2, distance_between_bodies of 3, and inverse_of_semi_major_axis of 1" do
-      subject.vis_viva_orbit_relative_speed_between_bodies(Body.new(2), 3, ellipses_semi_major_axis).should == -1.1553216002481734e-05
+      subject.vis_viva_orbit_relative_speed_between_bodies(Body.new(2), 3, ellipses_semi_major_axis).should be_within(0.1).of(-1.155e-05)
     end
   end
 
