@@ -12,4 +12,11 @@ describe KeplerOrbit do
     end
   end
 
+  describe "#vis_visa_describer" do
+  	it "should print a description of the imputs and outputs of an equation" do
+  		description = "For a central body with mass 2, distance between bodies of 3, and inverse of semi major axis of 1, relative speed between bodies is -1.4142135623730951"
+  		subject.vis_visa_describer(Body.new(2), 3, ellipses_semi_major_axis).should == description
+  	end
+  end
+
 end

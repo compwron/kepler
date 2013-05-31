@@ -12,5 +12,10 @@ class KeplerOrbit
       return Math.sqrt(relative_speed_between_bodies_squared)
     end
   end
+
+  def vis_visa_describer(central_body, distance_between_bodies, inverse_of_semi_major_axis)
+    relative_speed_between_bodies = vis_viva_orbit_relative_speed_between_bodies(central_body, distance_between_bodies, inverse_of_semi_major_axis)
+    "For a central body with mass #{central_body.mass}, distance between bodies of #{distance_between_bodies}, and inverse of semi major axis of #{inverse_of_semi_major_axis}, relative speed between bodies is #{relative_speed_between_bodies}"
+  end
 end
 

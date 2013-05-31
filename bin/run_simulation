@@ -2,5 +2,5 @@
 
 require_relative "../lib/kepler_orbit"
 
-puts KeplerOrbit.new.vis_viva_orbit_relative_speed_between_bodies(Body.new(2), 3, 4)
+puts KeplerOrbit.new.vis_visa_describer(Body.new(2), 3, 4)
 # square root of (1 * 2 * (2/3 * 1/4)) should be 0.577
