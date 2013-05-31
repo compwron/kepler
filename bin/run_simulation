@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 require_relative "../lib/kepler_orbit"
+require_relative "../lib/ideal_rocket"
 
 puts KeplerOrbit.new.vis_visa_describer(Body.new(2), 3, 4)
-# square root of (1 * 2 * (2/3 * 1/4)) should be 0.577
+
+puts IdealRocket.new.delta_v_describer(5, 1, 10)
