@@ -6,6 +6,6 @@ class Spacecraft
 	end
 
 	def find_thrust(mass_ejection_rate, exhaust_velocity, nozzle_exit_pressure, nozzle_exit_area)
-		return 0
+		return mass_ejection_rate * exhaust_velocity + (nozzle_exit_pressure - 0) * nozzle_exit_area
 	end
 end
